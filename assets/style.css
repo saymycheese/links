@@ -8,7 +8,27 @@
     }
 }
 
-body { padding: 2em; }
+/* html{
+    background: url('https://images.squarespace-cdn.com/content/v1/5473abb0e4b00af93820c6a0/1520143853736-ZW2BLQWLKVXNHEJZXG1W/galaxy.gif?format=2500w') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+body { 
+    padding: 2em;
+    display: grid;
+}
 
 a { color: blue; }
 em { font-style: italic; }
@@ -40,6 +60,7 @@ figure > img {object-fit: cover;}
 p{
     color: white;
 }
+
 
 .image-square{
     border-radius: 50%;
@@ -106,6 +127,11 @@ p{
 
 .video-embed-block.active aside{
     display: block;
+}
+
+.link-block{
+    display: block;
+    z-index: 3;
 }
 
 @media (max-width: 769px) {
