@@ -125,12 +125,11 @@ p{
 
     .img-thumb{
         position: absolute;
-        width: 47%;
-        height: 47%;
+        width: 45%;
+        height: 45%;
         z-index: 1;
-        top: 1.6em;
-        left: 1.698em;
-
+        top: 1.66em;
+        left: 1.74em;
     }
 
     .image-square{
