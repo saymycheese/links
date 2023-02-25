@@ -1,175 +1,104 @@
+
+<!doctype html>
 <html>
 	<head>
-		<title>Binding</title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
-		<link href="assets/main.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
 		<script defer src="assets/arena.js"></script>
+		<script defer src="assets/main.js"></script>
 	</head>
-  
 	<body>
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/galaxy1.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-
-        <!-- <audio src="assets/Palace.mp3" controls autoplay loop id="audio-bar">
-          <p>If you are reading this, it is because your browser does not support the audio element.</p>
-        </audio> -->
+		<section>
+			<!-- Replace this URL with your channel to connect the API! -->
+			<a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
+				<h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+			</a>
+		</section>
 
         <section>
-          <!-- Replace this URL with your channel to connect the API! -->
-          <a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
-            <h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
-          </a>
-          <div class="channel-description"></div> <!-- Same here for the channel description. -->
-          <ul class="channel-owner channel-collaborator"></ul> <!-- Owner and collaborators. -->
-        </section>
-
-        <section>
-          <h2 class="channel-count"></h2> <!-- How many blocks. -->
-          <!-- All the channel “blocks” will be created as children, here. -->
-          <!-- You could move the classes to different section elements to separate the types! -->
-          <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
-          </ul>
-        </section>
-        
+			<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+			</ul>
+		</section>
 
 
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-            <div class="display">
-              <h1>The 130 Year History of Nintendo</h1>
-              <iframe width="420" height="315" src="https://www.youtube.com/embed/FgeIBku1n4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-              </iframe>
-              <p>
-                  The beloved video game Company, Nintendo, has established themselves in the house holds of many, by producing some of the most popular games in history. but what many may not know is that the Company's history dates back over 130 years. From Hanafuda cards to the Switch console, today we take take a look at the history of Nintendo.
-              </p>
-            </div>
-          </div>
-
-          <!-- <template id="image-block">
-            <li>
-              <figure class="image-block">
-                <h3 class="title"></h3>
-                <picture>
-                  <source class="image-thumb">
-                  <source class="image-square">
-                  <source class="image-display">
-                  <img class="image">
-                </picture>
-                <a class="link">
-                  <p class="link-title"></p>
-                </a>
-                <figcaption class="description"></figcaption>
-                <p class="time-updated"></p>
-                <p class="time-created"></p>
-              </figure>
-            </li>
-          </template> -->
-
-          
-          <ul id="hexGrid">
-            
-              <li class="hex">
-                <div class="hexIn">
-                  <a class="hexLink" href="#">
-                    <template id="image-block">
-                    <img src="assets/icon/img_icon.svg" alt="" />
-                        <picture>
-                          <div class="thumb-image">
-                            <source class="image-thumb">
-                            <source class="image-square">
-                            <source class="image-display">
-                            <img class="image">
-                          </div>
+        <!-- Images. -->
+		<template id="image-block">
+			<li class="image-block">
+				<figure>
+                    <div class="icon">
+                        <img src="assets/icon/img_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
                         </picture>
-                      </template>
-                  </a>
-                </div>
-
-                <!-- <div id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-                  <div class="display">
-                    <h1><figcaption class="description"></figcaption></h1>
-                    <picture>
-                      <source class="image-display">
-                      <img class="image">
-                    </picture>
-                    <figcaption class="description"></figcaption>
-                  </div>
-                </div>
-              </li> -->
-
-           
-
-            <li class="hex">
-              <div class="hexIn">
-                <a class="hexLink" href="#">
-                  <img src="assets/icon/pdf_icon.svg" alt="" />
-                    <div class="thumb-image">
-                      <img src="/assets/placeholder/console1.jpeg">
                     </div>
-                </a>
-              </div>
-            </li>
-            <li class="hex">
-              <div class="hexIn">
-                <a class="hexLink" href="#">
-                  <img src="assets/icon/music_icon.svg" alt="" />
-                    <div class="thumb-image">
-                      <img src="/assets/placeholder/console1.jpeg">
-                    </div>
-                </a>
-              </div>
-            </li>
-            <li class="hex">
-              <div class="hexIn">
-                <a class="hexLink"  onclick="openNav()">
-                  <img src="assets/icon/link_icon.svg" alt="" />
-                    <div class="thumb-image">
-                      <img src="/assets/placeholder/console1.jpeg">
-                    </div>
-                </a>
-              </div>
-            </li>
-            <li class="hex">
-              <div class="hexIn">
-                <a class="hexLink" onclick="openNav()">
-                  <img src="assets/icon/vid_icon.svg" alt="" />
-                  <div class="thumb-image">
-                    <img src="/assets/placeholder/console3.png">
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="hex">
-              <div class="hexIn">
-                <a class="hexLink" href="#">
-                  <img src="assets/icon/twitter_icon.svg" alt="" />
-                    <div class="thumb-image">
-                      <img src="assets/placeholder/console1.jpeg">
-                    </div>
-                </a>
-              </div>
-            </li>
-          </ul>
+                </figure>
+                <aside>
+					<a class="link">
+						<p class="link-title"></p>
+					</a>
+					<figcaption class="description"></figcaption>
+                    <img class="image">
+                </aside>
+			</li>
+		</template>
 
-    
+        <!-- YouTube, Vimeo, etc. -->
+		<template id="video-embed-block">
+			<li class="video-embed-block">
+				<figure>
+                    <div class="icon">
+                        <img src="assets/icon/vid_embed_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
+                        </picture>
+                    </div>
+                    <aside>
+                        <a class="link">
+                            <p class="link-title"></p>
+                        </a>
+                        <div class="embed"></div>
+                        <figcaption class="description"></figcaption>
+                    </aside>
+				</figure>
+			</li>
 
-          <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "500px";
-              document.getElementById("main").style.marginLeft = "500px";
-              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-              document.body.style.backgroundColor = "white";
-            }
-            </script>
+        <!-- Links (saved sites). -->
+		<template id="link-block">
+			<li class="link-block">
+				<figure>
+					<picture>
+						<img class="image-square">
+					</picture>
+                    <aside>
+					<a class="link">
+                            <p class="link-title"></p>
+                        </a>
+                        <figcaption class="description"></figcaption>
+                    </aside>
+				</figure>
+			</li>
+		</template>
+
+        <!--PDFs-->
+		<template id="pdf-block">
+			<li class="pdf-block">
+				<figure >
+					<picture>
+						<img class="image-square">
+					</picture>
+                    <aside>
+                        <a class="link"> <!-- PDF link inserts here. -->
+                            <p class="link-title"></p> <!-- Repeats the block title. -->
+                        </a>
+                        <figcaption class="description"></figcaption>
+                    </aside>
+				</figure>
+			</li>
+		</template>
+
+
 
     </body>
-    </html>
+</html>

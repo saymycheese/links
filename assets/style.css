@@ -1,4 +1,12 @@
-/* These styles are just to make it easier to see the blocks, initially. */
+:root{
+    --spacing: 16px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --spacing: 32px;
+    }
+}
 
 body { padding: 2em; }
 
@@ -6,10 +14,127 @@ a { color: blue; }
 em { font-style: italic; }
 strong { font-weight: bold; }
 
-body,
-section,
-ul,
-figure {
+
+ul{
 	display: grid;
-	gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
+}
+
+li{
+    aspect-ratio: 1;
+}
+
+figure{
+    overflow: hidden;
+    word-break: break-word;
+}
+
+figure,
+img{
+    height: 100%;
+    width: 100%;
+}
+
+figure > img {object-fit: cover;}
+
+p{
+    color: white;
+}
+
+.image-square{
+    border-radius: 50%;
+}
+
+.icon {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.imgicon{
+    width: 10em;
+    height: auto;
+}
+
+.img-thumb{
+    position: absolute;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    z-index: 1;
+    top: 2.55em;
+    left: 2.7em;
+}
+
+/* image block************ */
+.image-block aside{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.482);
+    z-index: 2;
+    padding:calc(var(--spacing)*4);
+}
+
+.image-block aside > img{
+    object-fit: contain;
+}
+
+.image-block.active aside{
+    display: block;
+}
+
+/* video embed block************ */
+.video-embed-block aside{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.482);
+    z-index: 2;
+    padding:calc(var(--spacing)*4);
+}
+
+.image-block aside > .embed{
+    object-fit: contain;
+}
+
+.video-embed-block.active aside{
+    display: block;
+}
+
+@media (max-width: 769px) {
+    .icon {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgicon{
+        width: 8em;
+        height: auto;
+    }
+
+    .img-thumb{
+        position: absolute;
+        width: 47%;
+        height: 47%;
+        z-index: 1;
+        top: 1.6em;
+        left: 1.698em;
+
+    }
+
+    .image-square{
+        border-radius: 50%;
+
+    }
 }

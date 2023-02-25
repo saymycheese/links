@@ -21,8 +21,7 @@ button {
 details summary,
 menu,
 ol,
-ul,
-li {
+ul {
 	list-style: none;
 }
 
