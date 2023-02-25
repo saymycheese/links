@@ -18,10 +18,10 @@ window.arenaCallback = () => {
 
     videoEmbedBlocks.forEach((block) => {
         block.querySelector('figure').onclick = () => {
-            block.classList.add('active')
+            block.classList.add("active")
 
             block.querySelector('aside').onclick = () => {
-                block.classList.remove('active')
+                block.classList.remove("active")
             }
         }
     })

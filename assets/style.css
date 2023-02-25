@@ -4,7 +4,7 @@
 
 @media (min-width: 768px) {
     :root {
-        --spacing: 32px;
+        --spacing: 26px;
     }
 }
 
@@ -26,8 +26,7 @@
   }
 
 body { 
-    padding: 2em;
-    display: grid;
+    /* padding: 10em; */
 }
 
 a { color: blue; }
@@ -38,7 +37,33 @@ strong { font-weight: bold; }
 ul{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
+    width: 90vw;
+    height: 85vh;
+    margin: 5em;
+    padding: 5vw;
+    position: fixed;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+li:nth-child(5n+4) figure{
+    transform: scale(160%);
+}
+
+li:nth-child(3n+3) figure{
+    transform: scale(180%);
+}
+
+li:nth-child(9n+6) figure{
+    transform: scale(120%);
+}
+
+li:nth-child(7n+5) figure{
+    transform: scale(50%);
+}
+
+
 
 li{
     aspect-ratio: 1;
@@ -100,7 +125,7 @@ p{
     right: 0;
     background-color: rgba(0, 0, 0, 0.482);
     z-index: 2;
-    padding:calc(var(--spacing)*4);
+    padding:calc(var(--spacing)*15);
 }
 
 .image-block aside > img{
@@ -109,6 +134,10 @@ p{
 
 .image-block.active aside{
     display: block;
+}
+
+.image-block aside p{
+    text-align: center;
 }
 
 /* video embed block************ */
@@ -121,23 +150,46 @@ p{
     right: 0;
     background-color: rgba(0, 0, 0, 0.482);
     z-index: 2;
-    padding:calc(var(--spacing)*5);
+    padding:calc(var(--spacing)*15);
 }
 
-.image-block aside > .embed{
-    object-fit: contain;
+.video-embed-block aside > .embed{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.video-embed-block aside p{
+    text-align: center;
+    justify-content: center;
+}
+
+.video-embed-block aside a{
+    font-size: 100px;
 }
 
 .video-embed-block.active aside{
     display: block;
 }
 
-.link-block{
-    display: block;
-    z-index: 3;
-}
 
 @media (max-width: 769px) {
+    body { 
+        padding: 2em;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
+        width: 90vw;
+        height: 85vh;
+        margin: -1em;
+        position: fixed;
+        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
     .icon {
         position: relative;
         top: 0;
@@ -164,5 +216,21 @@ p{
     .image-square{
         border-radius: 50%;
 
+    }
+
+    li:nth-child(5n+4) figure{
+        transform: scale(120%);
+    }
+    
+    li:nth-child(3n+3) figure{
+        transform: scale(130%);
+    }
+    
+    li:nth-child(9n+6) figure{
+        transform: scale(110%);
+    }
+    
+    li:nth-child(7n+5) figure{
+        transform: scale(65%);
     }
 }
