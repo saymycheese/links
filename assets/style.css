@@ -49,6 +49,7 @@ strong { font-weight: bold; }
 ul{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
+    margin-top: 5em;
     /* width: 90vw;
     height: 85vh;
     margin: 5em;
@@ -104,20 +105,10 @@ p{
     font-family: 'Uncracked';
     font-size: 100px;
     top: 20px;
-    margin-bottom: 5vw;
+    margin-bottom: 15vw;
+    animation: flicker 1.5s infinite alternate;
     color: #fff;
-    text-shadow:
-      /* White glow */
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      /* Green glow */
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-      z-index: 2;
+    z-index: 2;
 }
 
 .link-title{
@@ -135,6 +126,28 @@ p{
       0 0 151px #0fa;
     
 }
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 
 .image-square{
     border-radius: 50%;
@@ -234,7 +247,7 @@ p{
         overflow: scroll;
         overflow-y: scroll;
         overflow-x: hidden; */
-        padding-top: 22vw;
+        margin-top: 8em;
     }
 
     .channel-title{
