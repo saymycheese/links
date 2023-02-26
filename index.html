@@ -13,7 +13,14 @@
         <video autoplay muted loop playsinline id="myVideo">
             <source src="assets/galaxy1.mp4" type="video/mp4">
           </video>
-
+        
+          <!-- <audio id="track">
+            <source src="assets/Palace.mp3" loop type="audio/mpeg" />
+          </audio>
+          
+          <div id="player-container">
+            <div id="play-pause" class="play">Play</div>
+          </div> -->
 
 		<section>
 			<!-- Replace this URL with your channel to connect the API! -->
@@ -70,31 +77,40 @@
                     </aside>
 				</figure>
 			</li>
+        </template>
+
 
         <!-- Links (saved sites). -->
-		<!-- <template id="link-block">
+		<template id="link-block">
 			<li class="link-block">
 				<figure>
-					<picture>
-						<img class="image-square">
-					</picture>
+                    <div class="icon">
+                        <img src="assets/icon/link_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
+                        </picture>
+                    </div>
                     <aside>
 					<a class="link">
                             <p class="link-title"></p>
                         </a>
+                    <img class="image">
                         <figcaption class="description"></figcaption>
                     </aside>
 				</figure>
 			</li>
-		</template> -->
+		</template>
 
         <!--PDFs-->
-		<!-- <template id="pdf-block">
+		<template id="pdf-block">
 			<li class="pdf-block">
 				<figure >
-					<picture>
-						<img class="image-square">
-					</picture>
+                    <div class="icon">
+                        <img src="assets/icon/pdf_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
+                        </picture>
+                    </div>
                     <aside>
                         <a class="link"> 
                             <p class="link-title"></p> 
@@ -103,25 +119,28 @@
                     </aside>
 				</figure>
 			</li>
-		</template> -->
+		</template>
 
         <!-- Spotify, Soundcloud, etc. -->
-		<!-- <template id="audio-embed-block">
+		<template id="audio-embed-block">
 			<li>
 				<figure class="audio-embed">
-					<picture>
-						<img class="image-square">
-					</picture>
+                    <div class="icon">
+                        <img src="assets/icon/music_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
+                        </picture>
+                    </div>
                     <aside>
-                        <div class="embed"></div>
                         <a class="link"> 
                             <p class="link-title"></p> 
                         </a>
+                        <div class="embed"></div>
                         <figcaption class="description"></figcaption>
                     </aside>
 				</figure>
 			</li>
-		</template> -->
+		</template>
 
 
 
