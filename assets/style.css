@@ -1,10 +1,22 @@
-:root{
+@font-face {
+    font-family: 'AwmuDemo';
+    src: url(/assets/font/AwmuDemo-YzPML.otf);
+    font-family: 'Silom';
+    src: url(/assets/font/Silom.ttf);
+    font-family: 'Uncracked';
+    src: url(/assets/font/UncrackedFreeTrial-X3WjK.otf);
+  }
+  
+  :root{
     --spacing: 16px;
+    --header: 18px;
+
 }
 
 @media (min-width: 768px) {
     :root {
         --spacing: 26px;
+        --header: calc(var(--header)*2);
     }
 }
 
@@ -16,6 +28,7 @@
     background-size: cover;
 } */
 
+
 #myVideo {
     object-fit: cover;
     width: 100vw;
@@ -26,10 +39,9 @@
   }
 
 body { 
-    /* padding: 10em; */
+    padding: 10em;
 }
 
-a { color: blue; }
 em { font-style: italic; }
 strong { font-weight: bold; }
 
@@ -37,14 +49,14 @@ strong { font-weight: bold; }
 ul{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
-    width: 90vw;
+    /* width: 90vw;
     height: 85vh;
     margin: 5em;
     padding: 5vw;
     position: fixed;
     overflow: scroll;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
 
 li:nth-child(5n+4) figure{
@@ -62,7 +74,6 @@ li:nth-child(9n+6) figure{
 li:nth-child(7n+5) figure{
     transform: scale(50%);
 }
-
 
 
 li{
@@ -84,10 +95,45 @@ figure > img {object-fit: cover;}
 
 p{
     color: white;
+    font-family: 'Silom';
+}
+
+.channel-title{
+    position: fixed;
+    text-align: left;
+    font-family: 'Uncracked';
+    font-size: 100px;
+    top: 20px;
+    margin-bottom: 5vw;
+    color: #fff;
+    text-shadow:
+      /* White glow */
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      /* Green glow */
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      z-index: 2;
 }
 
 .link-title{
-    color: blueviolet;
+    color: #1DA1F2;
+    text-shadow:
+      /* White glow */
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      /* Green glow */
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+    
 }
 
 .image-square{
@@ -129,7 +175,7 @@ p{
 }
 
 .image-block aside > img{
-    object-fit: contain;
+    object-fit:fill;
 }
 
 .image-block.active aside{
@@ -165,7 +211,7 @@ p{
 }
 
 .video-embed-block aside a{
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .video-embed-block.active aside{
@@ -181,13 +227,36 @@ p{
     ul{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(6*var(--spacing)),1fr));
-        width: 90vw;
+        /* width: 90vw;
         height: 85vh;
         margin: -1em;
         position: fixed;
         overflow: scroll;
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: hidden; */
+        padding-top: 22vw;
+    }
+
+    .channel-title{
+        position: fixed;
+        text-align: left;
+        font-family: 'Uncracked';
+        font-size: 80px;
+        top: 20px;
+        margin-bottom: 15vw;
+        color: #fff;
+        text-shadow:
+          /* White glow */
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          /* Green glow */
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px #0fa;
+          z-index: 2;
     }
 
     .icon {
@@ -223,7 +292,7 @@ p{
     }
     
     li:nth-child(3n+3) figure{
-        transform: scale(130%);
+        transform: scale(140%);
     }
     
     li:nth-child(9n+6) figure{
