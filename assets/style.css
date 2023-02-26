@@ -242,7 +242,7 @@ p{
     padding:calc(var(--spacing)*15);
 }
 
-.video-embed-block aside > img{
+.video-embed-block aside > .embed{
     object-fit:fill;
 }
 
@@ -336,7 +336,8 @@ p{
     display: block;
 }
 
-.video-embed-block aside > .embed{
+.audio-embed-block aside > .embed{
+    object-fit:fill;
     display: flex;
     text-align: center;
     justify-content: center;

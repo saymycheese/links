@@ -58,6 +58,20 @@ window.arenaCallback = () => {
             }
         }
     })
+
+    //audio embed lightbox
+    let audioEmbedBlocks = document.querySelectorAll('li.audio-embed-block')
+
+    audioEmbedBlocks.forEach((block) => {
+        block.querySelector('figure').onclick = () => {
+            block.classList.add("active")
+
+            block.querySelector('aside').onclick = () => {
+                console.log("click")
+                block.classList.remove("active")
+            }
+        }
+    })
     
 
 
