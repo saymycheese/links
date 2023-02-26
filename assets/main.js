@@ -44,6 +44,20 @@ window.arenaCallback = () => {
             }
         }
     })
+
+    //pdf lightbox
+    let pdfBlocks = document.querySelectorAll('li.pdf-block')
+
+    pdfBlocks.forEach((block) => {
+        block.querySelector('figure').onclick = () => {
+            block.classList.add("active")
+
+            block.querySelector('aside').onclick = () => {
+                console.log("click")
+                block.classList.remove("active")
+            }
+        }
+    })
     
 
 
