@@ -60,7 +60,7 @@ window.arenaCallback = () => {
     })
 
     //audio embed lightbox
-    let audioEmbedBlocks = document.querySelectorAll('li.audio-embed-block')
+    let audioEmbedBlocks = document.querySelectorAll('li.audio-embed')
 
     audioEmbedBlocks.forEach((block) => {
         block.querySelector('figure').onclick = () => {

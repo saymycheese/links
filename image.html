@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/arena.js"></script>
+		<script defer src="assets/main.js"></script>
+	</head>
+	<body>
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="assets/galaxy1.mp4" type="video/mp4">
+          </video>
+        
+          <audio id="track">
+            <source src="assets/Palace.mp3" loop type="audio/mpeg" />
+          </audio>
+          
+          <div id="player-container">
+            <div id="play-pause" class="play">Play</div>
+          </div>
+
+          <div id="media-type">
+            <a href="image.html">
+                <img src="assets/icon/img_icon_full.svg">
+            </a>
+            <img src="assets/icon/link_icon_full.svg">
+            <img src="assets/icon/music_icon_full.svg">
+            <img src="assets/icon/pdf_icon_full.svg">
+            <img src="assets/icon/vid_embed_icon_full.svg">
+          </div>
+
+		<section>
+			<!-- Replace this URL with your channel to connect the API! -->
+			<a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
+				<h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+			</a>
+		</section>
+
+        <section>
+			<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+			</ul>
+		</section>
+
+
+        <!-- Images. -->
+		<template id="image-block">
+			<li class="image-block">
+				<figure>
+                    <div class="icon">
+                        <img src="assets/icon/img_icon.svg" class="imgicon">
+                        <picture class="img-thumb">
+                            <img class="image-square">
+                        </picture>
+                    </div>
+                </figure>
+                <aside>
+                    <h2>
+                        <a class="link">
+                            <p class="link-title"></p>
+                        </a>
+                    </h2>
+                    <img class="image">
+					<figcaption class="description"></figcaption>
+                </aside>
+			</li>
+		</template>
+    </body>
+</html>
