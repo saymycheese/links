@@ -452,7 +452,6 @@ p{
       }
 
       .link-title{
-        color: #1DA1F2;
         font-size: 5vw;
         text-shadow:
           /* White glow */
@@ -466,8 +465,7 @@ p{
           0 0 102px #0fa,
           0 0 151px #0fa;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto; 
     }
 
 
@@ -626,7 +624,7 @@ p{
         right: 0;
         background-color: rgba(0, 0, 0, 0.834);
         z-index: 5;
-        padding:calc(var(--spacing)*5);
+        padding:calc(var(--spacing)*4);
         margin-top: -20vw;
     }
 
@@ -643,12 +641,12 @@ p{
 
     .link-block aside p{
         text-align: center;
-        width: 50vw;
+        width: 60vw;
     }
 
     .link-block .link-title{
         color: #7678FF;
-        margin-top: 25vw;
+        margin-top: 20vw;
     }
 
     /* PDF block************ */
