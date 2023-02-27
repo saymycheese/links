@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'AwmuDemo';
-    src: url(/assets/font/AwmuDemo-YzPML.otf);
+    src: url(/assets/font/AwmuDemo-YzPML.otf) format('truetype');
     font-family: 'Silom';
-    src: url(/assets/font/Silom.ttf);
+    src: url(/assets/font/Silom.ttf) format('truetype');
     font-family: 'Uncracked';
-    src: url(/assets/font/UncrackedFreeTrial-X3WjK.otf);
+    src: url(/assets/font/UncrackedFreeTrial-X3WjK.otf) format('truetype');
   }
-  
+
   :root{
     --spacing: 16px;
     --header: 18px;
