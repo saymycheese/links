@@ -388,7 +388,6 @@ p{
     }
 
     p{
-        font-size: 14px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -541,6 +540,7 @@ p{
 
     .image-block aside p{
         width: 50vw;
+        font-size: 14px;
     }
 
     .image-block .image{
@@ -574,7 +574,7 @@ p{
     .video-embed-block p{
         width: 70vw;
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .video-embed-block .link-title{
@@ -604,10 +604,12 @@ p{
     .audio-embed aside p{
         width: 70vw;
         text-align: center;
+        font-size: 14px;
     }
 
     .audio-embed .link-title{
         color: #00CC20;
+        font-size: 5vw;
     }
 
     .audio-embed iframe{
@@ -641,11 +643,13 @@ p{
     .link-block aside p{
         text-align: center;
         width: 70vw;
+        font-size: 14px;
     }
 
     .link-block .link-title{
         color: #7678FF;
         margin-top: 30vw;
+        font-size: 5vw;
     }
 
     /* PDF block************ */
@@ -674,11 +678,13 @@ p{
 
     .pdf-block aside p{
         text-align: center;
+        font-size: 14px;
     }
 
     .pdf-block .link-title{
         color: #FAFF00;
         margin-top: 25vw;
+        font-size: 5vw;
     }
 
 }
