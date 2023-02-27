@@ -364,7 +364,7 @@ p{
 }
 
 .audio-embed .link-title{
-    color: #24E743;
+    color: #00CC20;
     margin-top: -10vw;
 }
 
@@ -578,7 +578,7 @@ p{
     }
 
     .video-embed-block .link-title{
-        font-size: 14px;
+        font-size: 5vw;
         margin-top: 25vw;
     }
 
@@ -606,9 +606,9 @@ p{
         text-align: center;
     }
 
-    /* .audio-embed .link-title{
-        margin-top: 15vh;
-    } */
+    .audio-embed .link-title{
+        color: #00CC20;
+    }
 
     .audio-embed iframe{
         margin-left: 45vw;
