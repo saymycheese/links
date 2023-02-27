@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Electrolize&family=Play:wght@400;700&display=swap');
 @font-face {
     font-family: 'AwmuDemo';
     src: url(font/AwmuDemo-YzPML.otf);
@@ -8,6 +9,8 @@
     src: url(font/UncrackedFreeTrial-X3WjK.otf);
     src: url(font/UncrackedFreeTrial-X3WjK.ttf) format('truetype');
   }
+
+
 
   :root{
     --spacing: 16px;
@@ -75,7 +78,7 @@ figure > img {object-fit: cover;}
 
 p{
     color: white;
-    font-family: 'Silom';
+    font-family: 'Play', sans-serif;
 }
 
 .channel-title{
@@ -92,6 +95,7 @@ p{
 
 .link-title{
     font-size: 25px;
+    font-family: 'Black Ops One', cursive;
     text-align: center;
     text-shadow:
       /* White glow */
