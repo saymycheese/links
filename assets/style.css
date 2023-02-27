@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'AwmuDemo';
-    src: url(../assets/font/AwmuDemo-YzPML.otf);
-    src: url(../assets/font/AwmuDemo-YzPML.ttf) format('truetype');
+    src: url(font/AwmuDemo-YzPML.otf);
+    src: url(font/AwmuDemo-YzPML.ttf) format('truetype');
     font-family: 'Silom';
-    src: url(../assets/font/Silom.ttf) format('truetype');
+    src: url(font/Silom.ttf) format('truetype');
     font-family: 'Uncracked';
-    src: url(../assets/font/UncrackedFreeTrial-X3WjK.otf);
-    src: url(../assets/font/UncrackedFreeTrial-X3WjK.ttf) format('truetype');
+    src: url(font/UncrackedFreeTrial-X3WjK.otf);
+    src: url(font/UncrackedFreeTrial-X3WjK.ttf) format('truetype');
   }
 
   :root{
