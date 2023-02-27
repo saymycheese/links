@@ -625,7 +625,6 @@ p{
         background-color: rgba(0, 0, 0, 0.834);
         z-index: 5;
         padding:calc(var(--spacing)*4);
-        margin-top: -20vw;
     }
 
     .link-block aside img{
@@ -646,7 +645,7 @@ p{
 
     .link-block .link-title{
         color: #7678FF;
-        margin-top: 20vw;
+        margin-top: 30vw;
     }
 
     /* PDF block************ */
