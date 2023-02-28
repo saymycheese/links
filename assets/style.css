@@ -84,18 +84,6 @@ p{
     font-family: 'Play', sans-serif;
 }
 
-.channel-title{
-    position: relative;
-    text-align: left;
-    font-family: 'Uncracked';
-    font-size: 200px;
-    top: 5vw;
-    /* margin-bottom: 15vw; */
-    animation: flicker 1.5s infinite alternate;
-    color: #fff;
-    z-index: 2;
-}
-
 .link-title{
     font-size: 30px;
     font-family: 'Audiowide', cursive;
@@ -219,7 +207,7 @@ transition: 0.3s;
 }
 
 .sidenav a:hover {
-color: #f1f1f1;
+color: #FF49E2;
 }
 
 .sidenav .startbtn {
@@ -255,20 +243,34 @@ color: #f1f1f1;
 #mySidenav{
     width: 100vw;
 }
+
+.cover{
+    margin-top: 8vh;
+}
   
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
 }
 
+.channel-title{
+    position: relative;
+    text-align: left;
+    font-family: 'Uncracked';
+    font-size: 200px;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    z-index: 2;
+}
+
 .channel-description{
     position: relative;
     z-index: 2;
     color: white;
-    padding: 6vw;
-    width: 60vw;
+    padding: 3vw;
+    width: 82ch;
     font-size: 20px;
-    margin-bottom: -2vw;
+    margin-bottom: 2vh;
 }
 
 
