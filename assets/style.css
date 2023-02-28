@@ -519,7 +519,7 @@ color: #FF49E2;
         position: fixed;
         display: flex;
         width: 100%;
-        margin-left: 0;
+        left: 25px;
         margin-top: 40px;
         z-index: 2;
     }
