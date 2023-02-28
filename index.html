@@ -14,195 +14,29 @@
             <source src="assets/galaxy1.mp4" type="video/mp4">
           </video>
         
-          <audio id="track">
+          <audio autoplay loop>
             <source src="assets/Palace.mp3" loop type="audio/mpeg" />
           </audio>
           
-          <div id="player-container">
-            <div id="play-pause" class="play">Play</div>
-          </div>
-
-          <div id="media-type">
-            <a href="home.html">
-                <img src="assets/icon/home_icon_full.svg">
-            </a>
-            <a href="image.html">
-                <img src="assets/icon/img_icon_full.svg">
-            </a>
-            <a href="link.html">
-                <img src="assets/icon/link_icon_full.svg">
-            </a>
-            <a href="music.html">
-                <img src="assets/icon/music_icon_full.svg">
-            </a>
-            <a href="pdf.html">
-                <img src="assets/icon/pdf_icon_full.svg">
-            </a>
-            <a href="video.html">
-                <img src="assets/icon/vid_embed_icon_full.svg">
-            </a>
-          </div>
-
 	      <div id="mySidenav" class="sidenav">
             <section>
               <!-- Replace this URL with your channel to connect the API! -->
               <div class="cover">
                 <a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
                     <div class="center">
-                    <h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+                    <h1 class="channel-title"></h1>
                 </div>
                 </a>
                 <div class="center">
                     <div class="channel-description"></div>
                 </div>
                 <div class="center">
-                <a href="javascript:void(0)" class="startbtn" onclick="closeNav()">
+                <a href="home.html" class="startbtn">
                     Start
                 </a>
                 </div>
             </div>
             </section>
-
         </div>
-
-        <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "100vw";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-            </script>
-
-
-
-        <div class="mission">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-                <img src="assets/icon/mission.svg">
-            </span>
-            <div id="mission-text">
-                <h2>Mission</h2>
-                <p>Explorer</p>
-            </div>
-        </div>
-
-        <section>
-			<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
-			</ul>
-		</section>
-
-
-        <!-- Images. -->
-		<template id="image-block">
-			<li class="image-block">
-				<figure>
-                    <div class="icon">
-                        <img src="assets/icon/img_icon.svg" class="imgicon">
-                        <picture class="img-thumb">
-                            <img class="image-square">
-                        </picture>
-                    </div>
-                </figure>
-                <aside>
-                    <div class="center">
-                        <img class="image">
-                    </div>
-					<figcaption class="description"></figcaption>
-                </aside>
-			</li>
-		</template>
-
-        <!-- YouTube, Vimeo, etc. -->
-		<template id="video-embed-block">
-			<li class="video-embed-block">
-				<figure>
-                    <div class="icon">
-                        <img src="assets/icon/vid_embed_icon.svg" class="imgicon">
-                        <picture class="img-thumb">
-                            <img class="image-square">
-                        </picture>
-                    </div>
-                </figure>
-                    <aside>
-                        <a class="link" target="_blank">
-                            <p class="link-title"></p>
-                        </a>
-                        <div class="embed"></div>
-                        <figcaption class="description"></figcaption>
-                    </aside>
-			</li>
-        </template>
-
-
-        <!-- Links (saved sites). -->
-		<template id="link-block">
-			<li class="link-block">
-				<figure>
-                    <div class="icon">
-                        <img src="assets/icon/link_icon.svg" class="imgicon">
-                        <picture class="img-thumb">
-                            <img class="image-square">
-                        </picture>
-                    </div>
-                </figure>
-                    <aside>
-					<a class="link">
-                            <p class="link-title"></p>
-                        </a>
-                    <div class="center">
-                        <img class="image">
-                    </div>
-                        <figcaption class="description"></figcaption>
-                    </aside>
-			</li>
-		</template>
-
-        <!--PDFs-->
-		<template id="pdf-block">
-			<li class="pdf-block">
-				<figure >
-                    <div class="icon">
-                        <img src="assets/icon/pdf_icon.svg" class="imgicon">
-                        <picture class="img-thumb">
-                            <img class="image-square">
-                        </picture>
-                    </div>
-                </figure>
-                    <aside>
-                        <a class="link"> 
-                            <p class="link-title"></p> 
-                        </a>
-                        <div class="center">
-                            <img class="image">
-                        </div>
-                        <figcaption class="description"></figcaption>
-                    </aside>
-			</li>
-		</template>
-
-        <!-- Spotify, Soundcloud, etc. -->
-		<template id="audio-embed-block">
-			<li class="audio-embed">
-				<figure>
-                    <div class="icon">
-                        <img src="assets/icon/music_icon.svg" class="imgicon">
-                        <picture class="img-thumb">
-                            <img class="image-square">
-                        </picture>
-                    </div>
-                </figure>
-                    <aside>
-                        <a class="link"> 
-                            <p class="link-title"></p> 
-                        </a>
-                        <div class="embed"></div>
-                        <figcaption class="description"></figcaption>
-                    </aside>
-			</li>
-		</template>
-
-
-
     </body>
 </html>

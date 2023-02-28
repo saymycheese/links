@@ -48,6 +48,16 @@ body {
     padding: 10em;
 }
 
+a{
+    text-decoration: underline;
+    color: #FF49E2;
+}
+
+a:hover{
+    color:#00CC20;
+}
+
+
 em { font-style: italic; }
 strong { font-weight: bold; }
 
@@ -97,14 +107,15 @@ p{
     font-size: 25px;
     font-family: 'Silom';
     text-align: center;
+    margin-bottom: 20px;
     text-shadow:
       /* White glow */
-      0 0 7px #ffffff7f,
+      /* 0 0 7px #ffffff7f, */
       0 0 10px #ffffff7f,
-      0 0 21px #ffffff7f,
+      /* 0 0 21px #ffffff7f, */
       /* Green glow */
       0 0 42px rgba(0, 255, 170, 0.414),
-      0 0 82px rgba(0, 255, 170, 0.414),
+      /* 0 0 82px rgba(0, 255, 170, 0.414), */
       0 0 92px #0fa,
       0 0 102px #0fa,
       0 0 151px rgba(0, 255, 170, 0.414);
@@ -133,42 +144,11 @@ p{
     }    
   }
 
-/* play pause button ******************** */
-  #player-container #play-pause {
-    cursor: pointer;
-    text-indent: -999999px;
-    height:40px;
-    width: 40px;
-    padding: 12px 18px;
-    z-index: 2;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-      background-repeat: no-repeat!important;
-      background-position: center;
-      background-size: 16px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:20px;
-    background-color: gainsboro;
-    display: inline-block;
-    position: fixed;
-    margin-top: -100px;
-    margin-left: 80vw;
-  }
-  .play {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-  }
-  .pause {
-     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
-  }
-
 #media-type{
     position: fixed;
     width: 70px;
     margin-left: 79vw;
-}
-#player-container img{
-    transform: scale(10%);
-    margin-top: -100px;
+    top: 50px;
 }
 
 /* mission logo******* */
@@ -264,6 +244,15 @@ color: #f1f1f1;
     background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);
     background-repeat: no-repeat;
     transition: background-position-y ease-in-out 250ms;
+    text-shadow:
+    0 0 4px #fff,
+    /* 0 0 11px #fff, */
+    0 0 19px #fff,
+    /* 0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa, */
+    0 0 100px #0fa,
+    0 0 150px #0fa;
 }
 
 .startbtn:hover {
@@ -396,6 +385,7 @@ color: #f1f1f1;
 .video-embed-block .link-title{
     color: #F44A4A;
 }
+
 
 /* link block************ */
 .link-block aside{
@@ -535,7 +525,7 @@ color: #f1f1f1;
         display: flex;
         width: 100%;
         margin-left: 0;
-        margin-top: 60px;
+        margin-top: 40px;
         z-index: 2;
     }
 
@@ -573,6 +563,7 @@ color: #f1f1f1;
         top: 0;
         left: 0;
         background-image: url(background_nav.png);
+        /* background-position: center; */
         background-size: cover;
         overflow-x: hidden;
         transition: 0.5s;
@@ -616,7 +607,7 @@ color: #f1f1f1;
         color: white;
         padding: 8vw;
         width: 60vw;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: -2vw;
     }
     
@@ -667,6 +658,7 @@ color: #f1f1f1;
         0 0 151px #0fa;
     margin-left: auto;
     margin-right: auto; 
+    margin-bottom: 20px;
 }
 
 
