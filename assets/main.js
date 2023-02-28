@@ -2,6 +2,18 @@ window.arenaCallback = () => {
 	// Put your JavaScript in here!
 	// This will run after Are.na’s API returns your data.
 
+    //sidenav landing page
+    var mySidenav = document.getElementById('mySidenav');
+
+    function openNav() {
+        document.getElementById('mySidenav').style.width = "100vw";
+        }
+        
+        function closeNav() {
+        document.getElementById('mySidenav').style.width = "0";
+
+    }
+
     //image lightbox
     let imageBlocks = document.querySelectorAll('li.image-block')
 
@@ -100,5 +112,6 @@ window.arenaCallback = () => {
     });
 
     //
+
 
 }

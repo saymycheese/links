@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/arena.js"></script>
+		<script defer src="assets/main.js"></script>
+	</head>
+	<body>
+        <div id="mySidenav" class="sidenav">
+            <section>
+              <!-- Replace this URL with your channel to connect the API! -->
+              <a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
+                <h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+              </a>
+              <div class="center">
+                <div class="channel-description"></div>
+              </div>
+              <div class="center">
+              <a href="javascript:void(0)" class="startbtn" onclick="closeNav()">
+                Start
+              </a>
+            </div>
+            </section>
+
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "100vw";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+    </body>
+</html>
