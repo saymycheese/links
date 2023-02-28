@@ -140,7 +140,7 @@ p{
 #media-type{
     position: fixed;
     width: 70px;
-    margin-left: 79vw;
+    right: 10px;
     top: 50px;
 }
 
@@ -512,8 +512,6 @@ color: #f1f1f1;
         z-index: 2;
     }
     
-    
-
 
     #media-type{
         position: fixed;
@@ -527,27 +525,6 @@ color: #f1f1f1;
     #media-type img{
         width: 50px;
     }
-
-    #player-container #play-pause {
-        cursor: pointer;
-        text-indent: -999999px;
-        height: 30px;
-        width: 30px;
-        padding: 12px 18px;
-        z-index: 2;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-        background-repeat: no-repeat!important;
-        background-position: center;
-        background-size: 16px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px;
-        background-color: gainsboro;
-        display: inline-block;
-        position: fixed;
-        margin-top: 18px;
-        margin-left: 75vw;
-      }
 
       /* landing sidenav *************************** */
     .sidenav {
