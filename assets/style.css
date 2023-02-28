@@ -10,6 +10,15 @@
     src: url(font/UncrackedFreeTrial-X3WjK.ttf) format('truetype');
   }
 
+  @font-face {
+    font-family: 'silomregular';
+    src: url('silom-webfont.woff2') format('woff2'),
+         url('silom-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
   :root{
@@ -518,6 +527,8 @@ color: #f1f1f1;
         color: #fff;
         z-index: 2;
     }
+    
+    
 
 
     #media-type{
@@ -644,22 +655,24 @@ color: #f1f1f1;
     }
 
     .link-title{
-    font-size: 5vw;
-    text-shadow:
-        /* White glow */
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        /* Green glow */
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 20px;
-}
+        font-size: 25px;
+        font-family: 'Silom';
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow:
+          /* White glow */
+          /* 0 0 7px #ffffff7f, */
+          0 0 10px #ffffff7f,
+          /* 0 0 21px #ffffff7f, */
+          /* Green glow */
+          0 0 42px rgba(0, 255, 170, 0.414),
+          /* 0 0 82px rgba(0, 255, 170, 0.414), */
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px rgba(0, 255, 170, 0.414);
+        
+    }
+    
 
 
     .icon {
