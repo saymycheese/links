@@ -488,7 +488,7 @@ color: #f1f1f1;
         overflow: scroll;
         overflow-y: scroll;
         overflow-x: hidden; */
-        margin-top: 7em;
+        margin-top: 9em;
     }
 
     p{
@@ -525,7 +525,7 @@ color: #f1f1f1;
     }
 
     #media-type img{
-        width: 30px;
+        width: 50px;
     }
 
     #player-container #play-pause {
@@ -748,18 +748,16 @@ color: #f1f1f1;
         right: 0;
         background-color: rgba(0, 0, 0, 0.834);
         z-index: 2;
-        padding:calc(var(--spacing)*15);
+        padding:calc(var(--spacing)*10);
     }
 
     .video-embed-block.active aside{
         display: block;
-        margin-left: -45vw;
     }
 
     .video-embed-block iframe{
         width: 70vw;
         height: auto;
-        margin-left: 45vw;
     }
 
     .video-embed-block p{
@@ -770,7 +768,7 @@ color: #f1f1f1;
 
     .video-embed-block .link-title{
         font-size: 5vw;
-        margin-top: 25vw;
+        margin-top: 30vh;
     }
 
 
@@ -784,12 +782,11 @@ color: #f1f1f1;
         right: 0;
         background-color: rgba(0, 0, 0, 0.834);
         z-index: 2;
-        padding:calc(var(--spacing)*15);
+        padding:calc(var(--spacing)*10);
     }
 
     .audio-embed.active aside{
         display: block;
-        margin-left: -45vw;
     }
 
     .audio-embed aside p{
@@ -801,10 +798,11 @@ color: #f1f1f1;
     .audio-embed .link-title{
         color: #00CC20;
         font-size: 5vw;
+        margin-top: 10vh;
     }
 
     .audio-embed iframe{
-        margin-left: 45vw;
+        max-width: 60vw;
     }
 
     /* link block************ */
