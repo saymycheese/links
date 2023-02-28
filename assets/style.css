@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Odibee+Sans&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Play:wght@400;700&display=swap');
 @font-face {
-    font-family: 'AwmuDemo';
-    src: url(font/AwmuDemo-YzPML.otf);
-    src: url(font/AwmuDemo-YzPML.ttf) format('truetype');
-    font-family: 'Silom';
-    src: url(font/Silom.ttf) format('truetype');
     font-family: 'Uncracked';
     src: url(font/UncrackedFreeTrial-X3WjK.otf);
     src: url(font/UncrackedFreeTrial-X3WjK.ttf) format('truetype');
@@ -102,8 +97,8 @@ p{
 }
 
 .link-title{
-    font-size: 40px;
-    font-family: 'Odibee Sans', cursive;
+    font-size: 30px;
+    font-family: 'Audiowide', cursive;
     text-align: center;
     margin-bottom: 20px;
     text-shadow:
@@ -168,7 +163,7 @@ p{
 }
 
 .mission h2{
-    font-family:'AwmuDemo';
+    font-family: 'Audiowide', cursive;
     color: #FF49E2;
     text-shadow:
     /* White glow */
@@ -236,7 +231,7 @@ color: #f1f1f1;
     text-transform: uppercase;
     padding: 15px 50px;
     text-align: center;
-    font-family: 'AwmuDemo' ;
+    font-family: 'Audiowide', cursive;
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
     background-color: #161213;
     background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);
@@ -645,7 +640,7 @@ color: #f1f1f1;
 
     .link-title{
         font-size: 25px;
-        font-family: 'Odibee Sans', cursive;
+        font-family: 'Audiowide', cursive;
         text-align: center;
         margin-bottom: 20px;
         text-shadow:
