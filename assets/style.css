@@ -497,6 +497,7 @@ color: #FF49E2;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        font-size: 16px;
     }
     
     .cover{
@@ -580,8 +581,8 @@ color: #FF49E2;
         z-index: 2;
         color: white;
         padding: 8vw;
-        width: 60vw;
-        font-size: 14px;
+        width: 85vw;
+        font-size: 16px;
         margin-bottom: -2vw;
     }
     
@@ -710,7 +711,6 @@ color: #FF49E2;
 
     .image-block aside p{
         width: 50vw;
-        font-size: 14px;
     }
 
     .image-block .image{
@@ -742,7 +742,6 @@ color: #FF49E2;
     .video-embed-block p{
         width: 70vw;
         text-align: center;
-        font-size: 14px;
     }
 
     .video-embed-block .link-title{
@@ -771,7 +770,6 @@ color: #FF49E2;
     .audio-embed aside p{
         width: 70vw;
         text-align: center;
-        font-size: 14px;
     }
 
     .audio-embed .link-title{
@@ -811,7 +809,6 @@ color: #FF49E2;
     .link-block aside p{
         text-align: center;
         width: 70vw;
-        font-size: 14px;
     }
 
     .link-block .link-title{
@@ -846,7 +843,6 @@ color: #FF49E2;
 
     .pdf-block aside p{
         text-align: center;
-        font-size: 14px;
     }
 
     .pdf-block .link-title{
