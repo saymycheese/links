@@ -513,27 +513,20 @@ color: #f1f1f1;
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .cover{
+        position: relative;
+        top: 20vh;
+    }
 
     .channel-title{
-        position: fixed;
+        position: relative;
         text-align: left;
         font-family: 'Uncracked';
-        font-size: 60px;
-        top: 20px;
-        /* margin-bottom: 15vw; */
+        font-size: 20vw;
+        animation: flicker 1.5s infinite alternate;
         color: #fff;
-        text-shadow:
-          /* White glow */
-          0 0 7px #fff,
-          0 0 10px #fff,
-          0 0 21px #fff,
-          /* Green glow */
-          0 0 42px #0fa,
-          0 0 82px #0fa,
-          0 0 92px #0fa,
-          0 0 102px #0fa,
-          0 0 151px #0fa;
-          z-index: 2;
+        z-index: 2;
     }
 
 
@@ -571,22 +564,111 @@ color: #f1f1f1;
         margin-left: 75vw;
       }
 
-      .link-title{
-        font-size: 5vw;
-        text-shadow:
-          /* White glow */
-          0 0 7px #fff,
-          0 0 10px #fff,
-          0 0 21px #fff,
-          /* Green glow */
-          0 0 42px #0fa,
-          0 0 82px #0fa,
-          0 0 92px #0fa,
-          0 0 102px #0fa,
-          0 0 151px #0fa;
-        margin-left: auto;
-        margin-right: auto; 
+      /* landing sidenav *************************** */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-image: url(background_nav.png);
+        background-size: cover;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
     }
+    
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+
+    .sidenav .startbtn {
+        display:inline-block;
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        text-align: center;
+        font-family: 'AwmuDemo' ;
+        clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+        background-color: #161213;
+        background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);
+        background-repeat: no-repeat;
+        transition: background-position-y ease-in-out 250ms;
+    }
+
+    .channel-description{
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding: 8vw;
+        width: 60vw;
+        font-size: 12px;
+        margin-bottom: -2vw;
+    }
+    
+    /* mission logo******* */
+    .mission {
+        position: fixed;
+        z-index: 2;
+        top:15px;
+        left:15px;
+    }
+    .mission img{
+        width: 80px;
+        height: auto;
+
+    }
+
+    .mission #mission-text{
+        margin-top: -90px;
+    margin-left: 80px;
+    font-size: 20px;
+    }
+
+    .mission p{
+        background-color: #03D9E7;
+        padding: 5px 25px;
+        color: black;
+        font-size: 12px;
+        box-shadow:
+          /* Green glow */
+          0 0 42px #03D9E7,
+          /* 0 0 82px rgba(0, 255, 170, 0.414),
+          0 0 92px #0fa, */
+          /* 0 0 102px #0fa, */
+          0 0 151px #03D9E7;
+    }
+
+    .link-title{
+    font-size: 5vw;
+    text-shadow:
+        /* White glow */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* Green glow */
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
 
     .icon {
