@@ -43,12 +43,47 @@
             </a>
           </div>
 
-		<section>
-			<!-- Replace this URL with your channel to connect the API! -->
-			<a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
-				<h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
-			</a>
-		</section>
+	      <div id="mySidenav" class="sidenav">
+            <section>
+              <!-- Replace this URL with your channel to connect the API! -->
+              <a href="https://www.are.na/abhishek-kalia-xc9t_p_jbhi/video-games-pj2l6922bpa" id="channel-url">
+                <div class="center">
+                <h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+            </div>
+              </a>
+              <div class="center">
+                <div class="channel-description"></div>
+              </div>
+              <div class="center">
+              <a href="javascript:void(0)" class="startbtn" onclick="closeNav()">
+                Start
+              </a>
+            </div>
+            </section>
+
+        </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "100vw";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+
+
+
+        <div class="mission">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <img src="assets/icon/mission.svg">
+            </span>
+            <div id="mission-text">
+                <h2>Mission</h2>
+                <p>Explorer</p>
+            </div>
+        </div>
 
         <section>
 			<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
