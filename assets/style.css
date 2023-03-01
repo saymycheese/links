@@ -471,9 +471,8 @@ color: #FF49E2;
 
 .audio-embed .link-title{
     color: #00CC20;
-    margin-top: -10vw;
+    margin-top: -3vh;
 }
-
 
 @media (max-width: 768px) {
     body { 
