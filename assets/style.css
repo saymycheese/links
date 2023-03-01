@@ -369,6 +369,10 @@ color: #FF49E2;
 
 .video-embed-block aside p{
     text-align: center;
+    max-width: 90ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -410,6 +414,9 @@ color: #FF49E2;
 .link-block aside p{
     text-align: center;
     width: 50vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .link-block .link-title{
@@ -741,6 +748,9 @@ color: #FF49E2;
     .video-embed-block p{
         width: 70vw;
         text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .video-embed-block .link-title{
