@@ -369,7 +369,6 @@ color: #FF49E2;
 
 .video-embed-block aside p{
     text-align: center;
-    max-width: 90ch;
 }
 
 
@@ -382,7 +381,8 @@ color: #FF49E2;
     color: #F44A4A;
 }
 
-.video-embed-block .description{
+.video-embed-block .description p{
+    max-width: 90ch;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -416,14 +416,14 @@ color: #FF49E2;
 
 .link-block aside p{
     text-align: center;
-    width: 50vw;
 }
 
 .link-block .link-title{
     color: #7678FF;
 }
 
-.link-block .description{
+.link-block .description p{
+    width: 50vw;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
