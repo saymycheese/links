@@ -91,12 +91,12 @@ p{
     margin-bottom: 20px;
     text-shadow:
       /* White glow */
-      /* 0 0 7px #ffffff7f, */
-      0 0 10px #ffffff7f,
+      0 0 7px #ffffff7f,
+      /* 0 0 10px #ffffff7f, */
       /* 0 0 21px #ffffff7f, */
       /* Green glow */
-      0 0 42px rgba(0, 255, 170, 0.414),
-      /* 0 0 82px rgba(0, 255, 170, 0.414), */
+      /* 0 0 42px rgba(0, 255, 170, 0.414), */
+      0 0 82px rgba(0, 255, 170, 0.414),
       0 0 92px #0fa,
       0 0 102px #0fa,
       0 0 151px rgba(0, 255, 170, 0.414);
@@ -370,9 +370,6 @@ color: #FF49E2;
 .video-embed-block aside p{
     text-align: center;
     max-width: 90ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 
@@ -383,6 +380,12 @@ color: #FF49E2;
 
 .video-embed-block .link-title{
     color: #F44A4A;
+}
+
+.video-embed-block .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -414,13 +417,16 @@ color: #FF49E2;
 .link-block aside p{
     text-align: center;
     width: 50vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .link-block .link-title{
     color: #7678FF;
+}
+
+.link-block .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* PDF block************ */
